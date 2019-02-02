@@ -1,0 +1,49 @@
+1.1.0, release on ...
+
+* Change to a WorldPainter plugin
+
+1.0.6, released on 7-11-2016
+
+* Support worlds created in WorldPainter 2.2.4 and up
+
+1.0.5
+
+* Support worlds created in WorldPainter 2.2.0 and up
+
+1.0.4-SNAPSHOT, released on 1-11-2015
+
+* Added a third scaling mode: "Wurm Unlimited Scaled", which multiplies vertical heights by four in the export, so that the proportions look right in WorldPainter (but the heights reported in WorldPainter are a quarter of what they will be in Wurm Unlimited). The scaling mode parameters are now:
+  --minecraft (Minecraft mode: horizontal scale 4:1, vertical scale: 1:1; this is the default)
+  --wurmUnscaled (Wurm Unlimited Unscaled mode: horizontal scale 1:1, vertical scale 1:1; slopes will be exaggerated in WorldPainter)
+  --wurmScaled (Wurm Unlimited Scaled mode: horizontal scale 1:1, vertical scale 1:4; slopes will look correct in WorldPainter but reported heights will be incorrect)
+* Increased minimum depth for kelp so there's less chance of it breaching the surface of the water
+* More accurate alignment of terrain types to heights
+
+1.0.3-SNAPSHOT, released on 31-10-2015
+
+* Trees are only placed on grass, dirt, marsh or moss tiles
+* The amount of moss has been halved
+* The Beaches terrain type will generate patches of reed along the waterline, as well as patches of kelp underwater
+* The Grass terrain type will generate patches of kelp underwater
+* Steep rock (at a higher angle than 45 degrees) will be turned to cliff
+
+1.0.2-SNAPSHOT, released on 25-10-2015
+
+* Added an unscaled horizontal scaling mode which translates blocks to tiles 1:1. Add the parameter --unscaled on the command line to select it
+
+1.0.1-SNAPSHOT, released on 25-10-2015
+
+* The different tree layers now place different types of tree:
+  + Deciduous places birch, oak, maple, chestnut and linden trees
+  + Pine places cedars, pines and firs
+  + Swamp land places willows and changes grass and dirt tiles around the water level to marsh
+  + Jungle places apple, lemon, olive, cherry and walnut trees
+  + All tree layers also place bushes of every type
+* Map podzol to peat and soul sand to tar
+* Grass (but not bare grass) will now have random patches of moss, as will forests (except swamp land)
+* Any unsupported materials and layers encountered are now reported as a warning
+* Bug fix: account for tile size difference when calculating WU map size
+
+1.0.0-SNAPSHOT, released on 24-10-2015
+
+First test release.

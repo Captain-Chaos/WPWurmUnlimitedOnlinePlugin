@@ -1,0 +1,11 @@
+This is a straightforward Maven project. Make sure you have Java 8 and Maven 3
+installed and build the distributable by invoking:
+
+mvn install
+
+The only wrinkle is that it depends on the Wurm Unlimited API, which doesn't
+exist in Maven central. You'll have to download the API from
+https://github.com/codeclubab/WurmModServerApi and then install common.jar from
+the lib directory in your local Maven repo as
+com.wurmonline.common:WurmOnlineCommon:1.0.0, and build and install the API itself as
+com.wurmonline.api:WurmOnlineAPI:1.0.0.
